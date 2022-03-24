@@ -6,7 +6,8 @@ import CopyNotification from './CopyNotification';
 type CurrencyInputProps = {
   label: string,
   value: number,
-  updateFn: any
+  updateFn: any,
+  isAtomicUnit: boolean
 }
 
 function timeout(delay: number) {
@@ -42,7 +43,7 @@ export default function CurrencyInput(props: CurrencyInputProps) {
           name={props.label}
           id={props.label}
           autoComplete="off"
-          value={formatNumber(props.value)}
+          value={formatNumber(props.value, props.isAtomicUnit)}
           onChange={(e: any) => updateValue(e.target.value)}
           onFocus={selectAll}
           className="shadow-sm bg-inherit focus:ring-solana-green focus:border-solana-green block w-full pr-12 sm:text-sm text-white rounded-md"

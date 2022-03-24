@@ -24,6 +24,7 @@ export default function Converter() {
                 label='Sol'
                 value={sol}
                 updateFn={updateFromSol}
+                isAtomicUnit={false}
             />
             <span className="mt-8">
                 =
@@ -32,6 +33,7 @@ export default function Converter() {
                 label='Lamport'
                 value={lamports}
                 updateFn={updateFromLamports}
+                isAtomicUnit={true}
             />
         </div>
     )
