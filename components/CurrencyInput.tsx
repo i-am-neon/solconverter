@@ -31,7 +31,7 @@ export default function CurrencyInput(props: CurrencyInputProps) {
   }
 
   return (
-    <>
+    <div className='w-64 mx-6'>
       <label htmlFor="search" className="block text-sm font-medium text-white">
         {props.label}
       </label>
@@ -44,11 +44,11 @@ export default function CurrencyInput(props: CurrencyInputProps) {
           defaultValue={props.initialValue}
           onChange={(e: any) => updateValue(e.target.value)}
           onFocus={selectAll}
-          className="shadow-sm focus:ring-solana-green focus:border-solana-green block w-full pr-12 sm:text-sm border-gray-300 rounded-md"
+          className="shadow-sm bg-inherit focus:ring-solana-green focus:border-solana-green block w-full pr-12 sm:text-sm text-white rounded-md"
         />
         <div className="absolute inset-y-0 right-0 flex py-1.5 pr-1.5">
           <button
-            className="inline-flex items-center rounded px-2 text-sm font-sans font-medium text-gray-400"
+            className="inline-flex items-center rounded px-2 text-sm font-sans font-medium text-gray-400 hover:text-solana-green"
             onClick={handleCopy}
           >
             <DuplicateIcon
@@ -61,6 +61,6 @@ export default function CurrencyInput(props: CurrencyInputProps) {
         show={showCopyNotification}
         setShow={setShowCopyNotification}
       />
-    </>
+    </div>
   )
 }

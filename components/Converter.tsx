@@ -20,24 +20,20 @@ export default function Converter() {
     }
 
     return (
-        <div className="w-4/5 content-center">
-            <div className="columns-3">
-                <CurrencyInput
-                    label='Sol'
-                    initialValue={sol}
-                    updateFn={updateFromSol}
-                />
-                <br />
-                <SwitchHorizontalIcon
-                    className="h-8 w-8 text-solana-green"
-                />
-                <br />
-                <CurrencyInput
-                    label='Lamports'
-                    initialValue={lamports}
-                    updateFn={updateFromLamports}
-                />
-            </div>
+        <div className="flex place-content-center my-12">
+            <CurrencyInput
+                label='Sol'
+                initialValue={sol}
+                updateFn={updateFromSol}
+            />
+            <SwitchHorizontalIcon
+                className="h-8 w-8 mt-6 text-solana-green"
+            />
+            <CurrencyInput
+                label='Lamports'
+                initialValue={lamports}
+                updateFn={updateFromLamports}
+            />
         </div>
     )
 }

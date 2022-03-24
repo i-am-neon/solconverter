@@ -23,7 +23,7 @@ export default function Header() {
                         <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
                             <div className="border-b border-gray-700">
                                 <div className="flex items-center justify-between h-16 px-4 sm:px-0">
-                                    <div className="flex items-center">
+                                    <div className="flex items-center ">
                                         <NextLink href='/'>
                                             <a className='flex'>
                                                 <div className="flex-shrink-0">
@@ -69,12 +69,6 @@ export default function Header() {
                     </>
                 )}
             </Disclosure>
-            <header className="py-10">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h1 className="text-xl font-semibold text-white">Convert Sol to Lamports and back</h1>
-                </div>
-            </header>
         </div>
-
     )
 }
