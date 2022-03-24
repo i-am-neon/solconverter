@@ -9,7 +9,7 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>Sol Converter</title>
-        <meta name="description" content="Convert Sol to Lamports" />
+        <meta name="description" content="Convert Sol to Lamport, the atomic unit of Sol" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
