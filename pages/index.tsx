@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Converter from '../components/Converter'
+import Footer from '../components/Footer'
 import Header from '../components/Header'
 
 const Home: NextPage = () => {
@@ -31,6 +32,8 @@ const Home: NextPage = () => {
             </div>
           </div>
         </main>
+
+        <Footer />
       </div>
     </>
   )
