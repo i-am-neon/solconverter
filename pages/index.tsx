@@ -22,7 +22,7 @@ const Home: NextPage = () => {
               <h1 className="text-xl font-semibold">Convert Sol to Lamports and back</h1>
               <p>
                 <a href="https://docs.solana.com/terminology#lamport" target='_blank' rel="noreferrer">Lamports</a> are
-                Solana's atomic units - the smallest denomination of Sol.
+                Solana&apos;s atomic units - the smallest denomination of Sol.
               </p>
             </div>
           </header>
