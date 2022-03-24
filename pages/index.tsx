@@ -19,7 +19,7 @@ const Home: NextPage = () => {
         <main className="-mt-32 flex-grow">
           <header className="py-10">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <h1 className="text-xl font-semibold">Convert Sol to Lamports and back</h1>
+              <h1 className="text-xl font-semibold">Convert Sol to Lamport and back</h1>
               <p>
                 <a href="https://docs.solana.com/terminology#lamport" target='_blank' rel="noreferrer">Lamports</a> are
                 Solana&apos;s atomic units - the smallest denomination of Sol.

@@ -29,7 +29,7 @@ export default function Converter() {
                 =
             </span>
             <CurrencyInput
-                label='Lamports'
+                label='Lamport'
                 value={lamports}
                 updateFn={updateFromLamports}
             />
