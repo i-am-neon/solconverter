@@ -11,7 +11,9 @@ const Home: NextPage = () => {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         
-        <Main />
+        <div className='selection:bg-solana-green selection:text-gray-800'>
+          <Main />
+        </div>
       </>
   )
 }

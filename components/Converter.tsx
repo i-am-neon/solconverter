@@ -1,5 +1,5 @@
 import { SwitchHorizontalIcon } from "@heroicons/react/outline";
-import InputKeyboardShortcut from "./InputKeyboardShortcut";
+import CurrencyInput from "./CurrencyInput";
 import { LAMPORTS_PER_SOL } from '@solana/web3.js';
 import { useState } from "react";
 
@@ -13,12 +13,17 @@ export default function Converter() {
         setLamports(newSolValue * LAMPORTS_PER_SOL);
     }
 
+    const updateFromLamports = (newLamportValue: number): void => {
+        console.log('newLamportValue :>> ', newLamportValue);
+        setSol(newLamportValue / LAMPORTS_PER_SOL);
+        setLamports(newLamportValue);
+    }
+
     return (
         <div className="w-4/5 content-center">
             <div className="columns-3">
-                <InputKeyboardShortcut
+                <CurrencyInput
                     label='Sol'
-                    keyboardShortcut='⌘K'
                     initialValue={sol}
                     updateFn={updateFromSol}
                 />
@@ -27,11 +32,10 @@ export default function Converter() {
                     className="h-8 w-8 text-solana-green"
                 />
                 <br />
-                <InputKeyboardShortcut
+                <CurrencyInput
                     label='Lamports'
-                    keyboardShortcut='⌘⇧K'
                     initialValue={lamports}
-                    updateFn={updateFromSol}
+                    updateFn={updateFromLamports}
                 />
             </div>
         </div>
