@@ -1,5 +1,6 @@
 import { DuplicateIcon } from '@heroicons/react/outline'
 import { useState } from 'react';
+import { formatNumber } from '../utils/format';
 import CopyNotification from './CopyNotification';
 
 type CurrencyInputProps = {
@@ -41,7 +42,7 @@ export default function CurrencyInput(props: CurrencyInputProps) {
           name={props.label}
           id={props.label}
           autoComplete="off"
-          value={props.value}
+          value={formatNumber(props.value)}
           onChange={(e: any) => updateValue(e.target.value)}
           onFocus={selectAll}
           className="shadow-sm bg-inherit focus:ring-solana-green focus:border-solana-green block w-full pr-12 sm:text-sm text-white rounded-md"
