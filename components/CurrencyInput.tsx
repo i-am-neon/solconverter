@@ -4,7 +4,7 @@ import CopyNotification from './CopyNotification';
 
 type CurrencyInputProps = {
   label: string,
-  initialValue: number,
+  value: number,
   updateFn: any
 }
 
@@ -13,7 +13,7 @@ function timeout(delay: number) {
 }
 
 export default function CurrencyInput(props: CurrencyInputProps) {
-  const [currentValue, setCurrentValue] = useState(props.initialValue);
+  const [currentValue, setCurrentValue] = useState(props.value);
   const [showCopyNotification, setShowCopyNotification] = useState(false);
 
   const selectAll = (event: any): void => event.target.select();
@@ -41,7 +41,7 @@ export default function CurrencyInput(props: CurrencyInputProps) {
           name={props.label}
           id={props.label}
           autoComplete="off"
-          defaultValue={props.initialValue}
+          value={props.value}
           onChange={(e: any) => updateValue(e.target.value)}
           onFocus={selectAll}
           className="shadow-sm bg-inherit focus:ring-solana-green focus:border-solana-green block w-full pr-12 sm:text-sm text-white rounded-md"

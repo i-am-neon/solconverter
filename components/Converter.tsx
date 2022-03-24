@@ -23,15 +23,18 @@ export default function Converter() {
         <div className="flex place-content-center my-12">
             <CurrencyInput
                 label='Sol'
-                initialValue={sol}
+                value={sol}
                 updateFn={updateFromSol}
             />
-            <SwitchHorizontalIcon
+            {/* <SwitchHorizontalIcon
                 className="h-8 w-8 mt-6 text-solana-green"
-            />
+            /> */}
+            <span className="mt-8">
+                =
+            </span>
             <CurrencyInput
                 label='Lamports'
-                initialValue={lamports}
+                value={lamports}
                 updateFn={updateFromLamports}
             />
         </div>
