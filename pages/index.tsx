@@ -10,6 +10,13 @@ const Home: NextPage = () => {
       <Head>
         <title>Sol Converter</title>
         <meta name="description" content="Convert Sol to Lamport, the atomic unit of Sol" />
+        <meta property="og:title" content="Sol Converter" />
+        <meta property="og:description" content="Convert Sol to Lamport, the atomic unit of Sol" />
+        <meta property="og:url" content="https://www.solconverter.com/" />
+        <meta property="og:image" content="https://arweave.net/nAq_f-0Rv1qPSilFx-A17u4uY66ILkaJDDrL4Nw2Xe0" />
+        {/* <meta name="twitter:card" content="summary_large_image" /> */}
+        <meta name="theme-color" content="#14F195" />
+        <meta property="og:type" content="website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
