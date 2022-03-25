@@ -26,7 +26,7 @@ export default function CurrencyInput(props: CurrencyInputProps) {
   }
 
   const handleCopy = async (): Promise<void> => {
-    navigator.clipboard.writeText(props.value.toString());
+    navigator.clipboard.writeText(formatNumber(props.value, false));
     setShowCopyNotification(true);
     await timeout(1000);
     setShowCopyNotification(false);
