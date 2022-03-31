@@ -19,7 +19,7 @@ export default function Converter() {
     }
 
     return (
-        <div className="flex place-content-center my-12">
+        <div className="sm:flex place-content-center my-12">
             <CurrencyInput
                 label='Sol'
                 value={sol}
