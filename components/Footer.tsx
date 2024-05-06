@@ -23,7 +23,7 @@ export default function Footer() {
                 </div>
                 <div className="mt-8 md:mt-0 md:order-1">
                     <p className="text-sm sm:text-left text-center text-gray-400">
-                        Created by <a href="https://linktr.ee/0xneon" target='_blank' rel="noreferrer">NΞ◎N</a>
+                        Created by <a href="https://neon.lol" target='_blank' rel="noreferrer">NΞ◎N</a>
                         <br />
                         Open-source and ad-free
                         <br />
